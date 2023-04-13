@@ -19,7 +19,7 @@ function calculateBMI() {
     console.log(bmi)
 
     const result = document.getElementById("result")
-    result.innerHTML = `Your BMI is <b><div>${bmi.toFixed(1)}</div></b> which means You are <b><div>${category}</div></b>.`
+    result.innerHTML = `Your BMI is <b><span>${bmi.toFixed(1)}</span></b> which means You are <b><span>${category}</span></b>.`
 
     if (weight === "" && height === "") {
         result.innerHTML = `Please fill your <b>weight</b> and <b>height</b>!`
